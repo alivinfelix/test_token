@@ -1,0 +1,58 @@
+{
+    "name": "ERN Token",
+    "version": "0.1",
+    "description": "Ethernity Ecosystem Token",
+    "files": [
+        "/contracts/**/*.sol",
+        "/build/contracts/*.json",
+        "!/contracts/mocks/**/*"
+    ],
+    "scripts": {
+        "node": "hardhat node",
+        "test": "hardhat test",
+        "test:gas": "REPORT_GAS=true npx hardhat test",
+        "coverage": "REPORT_COVERAGE=true npx hardhat coverage",
+        "lint": "npm run lint:js && npm run lint:sol",
+        "lint:js": "eslint --ignore-path .gitignore . --fix",
+        "lint:sol": "prettier --write \"contracts/**/*.sol\""
+    },
+    "dependencies": {
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-ethers": "^2.0.0",
+        "@nomiclabs/hardhat-etherscan": "^3.0.0",
+        "@nomiclabs/hardhat-web3": "^2.0.0",
+        "@openzeppelin/contracts": "^4.4.2",
+        "@truffle/hdwallet-provider": "^1.2.3",
+        "@typechain/ethers-v5": "^10.1.0",
+        "@typechain/hardhat": "^6.1.2",
+        "@types/chai": "^4.2.0",
+        "@types/mocha": ">=9.1.0",
+        "@types/node": ">=12.0.0",
+        "chai": "^4.2.0",
+        "dotenv": "^16.0.1",
+        "ethers": "^5.4.7",
+        "hardhat": "^2.14.0",
+        "hardhat-gas-reporter": "^1.0.8",
+        "keccak256": "^1.0.6",
+        "solidity-coverage": "^0.8.0",
+        "ts-node": ">=8.0.0",
+        "typechain": "^8.1.0",
+        "typescript": ">=4.5.0"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.4",
+        "@nomiclabs/hardhat-waffle": "^2.0.1",
+        "@openzeppelin/test-helpers": "^0.5.15",
+        "eslint": "^8.7.0",
+        "eslint-plugin-mocha": "^10.0.3",
+        "eslint-plugin-node": "^11.1.0",
+        "ethers": "^5.5.3",
+        "hardhat": "^2.8.2",
+        "hardhat-gas-reporter": "^1.0.7",
+        "prettier": "^2.5.1",
+        "prettier-plugin-solidity": "^1.0.0-beta.19"
+    },
+    "author": "Etherity",
+    "_id": "ern@0.1"
+}
